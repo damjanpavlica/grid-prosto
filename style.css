@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: black;
+    color: white;
+}
+
+aside {
+    background-color: #eee;
+}
+
+header {
+    grid-area: h;
+}
+
+footer {
+    grid-area: f;
+}
+
+main {
+    grid-area: m;
+}
+
+aside {
+    grid-area: s;
+}
+
+.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m m m m m m m m m m s s"
+    "f f f f f f f f f f f f"
+}
